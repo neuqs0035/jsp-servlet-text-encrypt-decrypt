@@ -17,14 +17,18 @@ public class EncryptDecrypt extends HttpServlet{
         String text = request.getParameter("text");
         String option = request.getParameter("option");
 
+        String outputtext = "";
+
         if (option.equals("Encrypt")){
-            out.print(encrypt(text));
+            outputtext = encrypt(text);
         }
 
         if (option.equals("Decrypt")){
-            out.print(decrypt(text));
+            outputtext = decrypt(text);
         }
         
+        request.setAttribute("response",outputtext);
+        request.getRequestDispatcher("index.jsp").forward(request, response);
 
     }
 
