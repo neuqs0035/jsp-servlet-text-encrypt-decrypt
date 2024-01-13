@@ -18,7 +18,7 @@ form{
 }
 
 .options{
-    margin-top: 50px;
+    margin-top: 40px;
     height: 55px;
     width:110px;
     font-size: 18px;
@@ -27,10 +27,15 @@ form{
 }
 
 .submit{
-    margin-top:50px;
+    margin-top:40px;
     height: 60px;
     width:120px;
     font-size: 18px;
     border-radius: 40px;
     cursor:grab;
+}
+
+.responsetext{
+    margin-top:60px;
+    font-size: 20px;
 }
