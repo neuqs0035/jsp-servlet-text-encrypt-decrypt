@@ -13,7 +13,7 @@
     <h1>Text Encrypt Decrypt</h1>
     
 
-    <form action="/EncryptDecrypt" method="post">
+    <form action="EncryptDecrypt" method="post">
 
         <input  class="inputtext" type="text" name="text" placeholder="Enter Text" required> <br>
 
@@ -27,6 +27,18 @@
 
     </form>
 
+    <p class="responsetext">
+    <% 
+
+        String message = (String) request.getAttribute("response");
+
+        if (message != null){
+
+            out.print(message);
+        }
+
+    %>
+    </p>
     </center>
 </body>
 </html>
