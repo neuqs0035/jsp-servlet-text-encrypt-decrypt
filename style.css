@@ -1,0 +1,36 @@
+*{
+    font-family:monospace;
+}
+
+form{
+    margin-top:60px;
+    width:50%;
+   
+    height: auto;
+}
+
+.inputtext{
+    width:70%;
+    height:60px;
+    border-radius: 20px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.options{
+    margin-top: 50px;
+    height: 55px;
+    width:110px;
+    font-size: 18px;
+    border-radius:20px;
+    padding-left:10px;
+}
+
+.submit{
+    margin-top:50px;
+    height: 60px;
+    width:120px;
+    font-size: 18px;
+    border-radius: 40px;
+    cursor:grab;
+}
